@@ -1,0 +1,50 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+.feature {
+    &-box {
+        width: 80%;
+        margin: 0 auto;    
+    }
+}
+.main {
+    padding-bottom: 60px;
+    &-top {
+        padding: 80px 20px;
+        &__img {
+            position: absolute;
+            top: 20%;
+            right: 15%;
+           
+        }
+    }
+}
+.flexbox {
+    display: flex;
+}
+.blog {
+    &-inner {
+        width: 90%;
+        margin: 0 auto;
+    }
+    &-column {
+        width: 80%;
+        margin-bottom: 0;
+        &:nth-child(2) {
+            margin: 0 20px 0;
+        } 
+    }
+    
+}
+.form {
+    &-item{
+        & input {
+            width: 50%;
+        }
+    }
+}
+.pc {
+    display: none;
+}

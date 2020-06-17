@@ -1,0 +1,133 @@
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+
+.mb-sm {
+  margin-bottom: 40px;
+}
+.mb-md {
+  margin-bottom: 60px;
+}
+.mb-lg {
+  margin-bottom: 90px;
+}
+.pt-sm {
+  padding-top: 20px;
+}
+.pt-md {
+  padding-top: 40px;
+}
+.pb-sm {
+  padding-bottom: 20px;
+}
+.pb-lg {
+  padding-bottom: 80px;
+}
+.text-sub{
+  font-size: 16px;
+  color: #3BA6C9;
+}
+.text-ss {
+  font-size: 14px;
+  font-weight: 600;
+}
+.text-sm {
+  font-size: 16px;
+  font-weight: 600;
+}
+.text-md {
+  font-size: 24px;
+  font-weight: 600;
+}
+.text-lr {
+  font-size: 28px;
+  font-weight: 600;
+}
+.text-lg {
+  font-size: 32px;
+  font-weight: 600;
+}
+.content-width {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+#container {
+  position: relative;
+  transition: transform .5s, box-shadow .5s;
+  background-color: $cWhite;
+  z-index: 10;
+}
+
+.header {
+  background-color: $cWhite;
+  height: 100px;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 32px 30px -30px rgba(53, 47, 47, 0.15);
+  
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    @extend .content-width;
+  }
+  &__nav {
+    display: none;
+  }
+}
+
+.logo {
+  display: flex;
+
+  &__img {
+    width: 1.0em;
+    padding-right: 10px;
+  }
+  &__size {
+    width: 2.5em;
+  }
+}
+.mobile-contact {
+  display: none;
+  &.btn-sp {
+    display: block;
+  }
+  &__btn {
+    background: linear-gradient(left, #FA41CC,#6020B0);
+    background: linear-gradient(to right,#FA41CC,#6020B0);
+    padding: 12px 36px;
+    border-radius: 10px;
+    & a {
+      font-size: 14px;
+      color: $cWhite;
+    }
+  }
+}
+footer {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 14px;
+}
+.space {
+  height: 100px;
+}

@@ -1,0 +1,19 @@
+.question {
+    &-list {
+        @extend .content-width;
+        border: 1px solid #E5E5E5 ;
+        line-height: 1.7em;
+        &__top {
+            border-bottom: 1px solid #E5E5E5 ;
+            padding: 13px;
+        }
+        &__answer {
+            padding: 15px;
+            background-color: #F2F2F2;
+           
+        }
+    }  
+}
+.close {
+    display: none;
+}

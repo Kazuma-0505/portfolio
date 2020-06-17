@@ -1,0 +1,48 @@
+/******************************************************************
+
+Stylesheet: 1280px以上のモニタで適用
+
+******************************************************************/
+// #container {
+//     width: 80%;
+//     padding: 0 auto;
+//  }
+ 
+ .feature-inner {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-bottom: 120px;
+     &__text {
+        text-align: left; 
+     }
+     &__img {
+         & img {
+        width: 470px;
+        }
+    }
+}
+.main {
+    padding-bottom: 60px;
+    background-position: top -150px right -120px;
+    &-top {
+        padding: 100px 20px;
+        &__img {
+            position: absolute;
+            top: 10%;
+            right: 15%;
+            & img {
+                width: 500px;
+            }
+        }
+    }
+}
+
+
+
+.pc {
+    display: none;
+} 
+.reverse {
+   flex-direction: row-reverse;
+}

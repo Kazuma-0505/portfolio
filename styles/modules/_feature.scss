@@ -1,0 +1,27 @@
+.feature {
+    text-align: center;
+    padding: 60px 0;
+    & .title-text {
+        line-height: 3.0em;
+        @extend .mb-sm; 
+    }
+    &-inner {
+        padding-top: 60px;
+        @extend .pb-sm;
+        &  p {
+            @extend .mb-sm;
+        }
+        &__img {
+            @extend .mb-sm;
+             & img {
+            width: 330px;
+            }
+        }
+        &__text {
+            & p {
+                line-height: 2.0em;
+            }
+        }
+    }
+    
+}
